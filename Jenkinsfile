@@ -4,7 +4,7 @@ node {
     def dockerImageTag = "devopsexample${env.Build_NUMBER}"
 
     stage('Clone repo') {
-        git url: 'https://github.com/KillianMalon/JenkinsTest.git'
+        git url: 'https://github.com/KillianMalon/JenkinsTest.git', branch;'main'
     }
 
     stage('Build project') {
